@@ -1,0 +1,383 @@
+/* Location button styles */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.location-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  min-width: 50px;
+}
+
+.location-btn:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.location-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Basic app styles */
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.loading {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.weather-info {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.unit-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.recent-searches {
+  margin-top: 20px;
+}
+
+.recent-searches ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-searches li {
+  background: #e9ecef;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recent-searches li:hover {
+  background: #dee2e6;
+}
+
+/* Notification Settings Styles */
+.notification-settings {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.notification-settings h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.notification-status {
+  margin-bottom: 15px;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-indicator.granted .status-dot {
+  background-color: #28a745;
+}
+
+.status-indicator.denied .status-dot {
+  background-color: #dc3545;
+}
+
+.status-indicator.default .status-dot {
+  background-color: #6c757d;
+}
+
+.notification-prompt {
+  text-align: center;
+  padding: 15px;
+  background: #e3f2fd;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.notification-prompt p {
+  margin: 0 0 15px 0;
+  color: #1976d2;
+}
+
+.enable-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.enable-btn:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.enable-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.notification-blocked {
+  background: #ffebee;
+  border: 1px solid #ffcdd2;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.notification-blocked p {
+  margin: 0 0 10px 0;
+  color: #c62828;
+  font-weight: 500;
+}
+
+.notification-blocked ol {
+  margin: 10px 0 0 20px;
+  color: #d32f2f;
+}
+
+.notification-blocked li {
+  margin: 5px 0;
+}
+
+.notification-unsupported {
+  background: #fff3e0;
+  border: 1px solid #ffcc02;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+}
+
+.notification-unsupported p {
+  margin: 5px 0;
+  color: #f57c00;
+}
+
+.notification-controls {
+  margin-top: 15px;
+}
+
+.daily-toggle {
+  margin-bottom: 15px;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+}
+
+.toggle-label input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-slider {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-slider:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+.toggle-label input:checked + .toggle-slider {
+  background-color: #007bff;
+}
+
+.toggle-label input:checked + .toggle-slider:before {
+  transform: translateX(26px);
+}
+
+.time-setting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #e9ecef;
+  border-radius: 6px;
+}
+
+.time-setting label {
+  font-weight: 500;
+  color: #333;
+  min-width: 120px;
+}
+
+.time-input {
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+}
+
+.notification-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.test-btn, .disable-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.test-btn {
+  background: #28a745;
+  color: white;
+}
+
+.test-btn:hover:not(:disabled) {
+  background: #218838;
+}
+
+.test-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.disable-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.disable-btn:hover:not(:disabled) {
+  background: #c82333;
+}
+
+.disable-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}

@@ -1,0 +1,81 @@
+.notification-settings {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.notification-settings h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.permission-section {
+  margin-bottom: 20px;
+}
+
+.status {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+.status.granted {
+  background-color: #4CAF50;
+}
+
+.status.denied {
+  background-color: #f44336;
+}
+
+.status.default {
+  background-color: #ff9800;
+  color: #333;
+}
+
+.enable-btn, .test-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.enable-btn:hover, .test-btn:hover {
+  background-color: #0056b3;
+}
+
+.denied-text {
+  color: #f44336;
+  font-style: italic;
+}
+
+.settings-section {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+}
+
+.setting-item {
+  margin: 15px 0;
+}
+
+.setting-item label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.setting-item input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.setting-item input[type="time"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

@@ -1,0 +1,179 @@
+.background-sync {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.background-sync h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.sync-status {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.label {
+  font-weight: 600;
+  color: #333;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.status.online {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status.offline {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.queue-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 0.85em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  min-width: 40px;
+}
+
+.stat-value.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.stat-value.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.stat-value.failed {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.pending-notice {
+  margin: 15px 0;
+  padding: 12px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 4px;
+  color: #856404;
+}
+
+.pending-notice p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.sync-controls {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.retry-btn, .clear-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.retry-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.retry-btn:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.retry-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.clear-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.clear-btn:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.clear-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.sync-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 4px;
+  border-left: 4px solid #007bff;
+}
+
+.sync-info h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.sync-info ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.sync-info li {
+  margin: 8px 0;
+  line-height: 1.4;
+  color: #555;
+}
